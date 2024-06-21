@@ -1,0 +1,15 @@
+.highlight-text, .todo-warning, .todo-warning-hero {
+  font-family: "Tiny5";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.todo-warning, .todo-warning-hero {
+  color: #f7c351;
+}
+
+.todo-warning-hero {
+  font-size: clamp(1rem, 0rem + 4vw, 4rem);
+}
+
+/*# sourceMappingURL=main.css.map */

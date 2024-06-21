@@ -1,0 +1,33 @@
+//helper function to check if font avaible or set to native fallback
+@import "../variables";
+@function valid-font($font-family) {
+        $fallback-font: "sans-serif";
+        @each $font in $font-family-allowed {
+                @if $font == $font-family {
+                        @return $font;
+                }
+        }
+        @return $fallback-font;
+}
+
+@mixin clue-text-variant(
+$font-family: "Tiny5 sans-serif",
+$font-weight:400,
+$font-style: normal)
+{
+        font-family: valid-font($font-family);
+        font-weight: $font-weight;
+        font-style: $font-style;
+}
+
+.highlight-text { 
+        @include clue-text-variant("Tiny5", 400, normal);
+} 
+
+.todo-warning {
+        @extend .highlight-text; color: #f7c351;
+}
+
+.todo-warning-hero {
+        @extend .todo-warning; font-size: $font-size-hero;
+}

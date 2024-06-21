@@ -1,0 +1,11 @@
+
+{
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "watch": ["index.php","public/", "src/"],
+  "ext": "js, css,php",
+  "exec": "php -S dev.practise-php.io:8080"
+}
