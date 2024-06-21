@@ -3,4 +3,5 @@
         <input placeholder="todo" class="animate__animated animate__zoomIn mb-3 p-2 bd-highlight text-decoration-underline" type="text" />
         <input placeholder="category" class="animate__animated animate__zoomIn mb-3 p-2 bd-highlight border- text-decoration-underline" type="text" />
         <input class="" type="submit" value="add">
+    </form>
 </div>
