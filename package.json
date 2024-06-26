@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "alpinejs": "^3.14.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "css-loader": "^7.1.2",
+    "nodemon": "^3.1.4",
+    "sass": "^1.77.6",
+    "style-loader": "^4.0.0",
+    "uuid": "^10.0.0"
+  },
+  "name": "practise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run open",
+    "nodemon": "nodemon",
+    "browser-sync": "browser-sync start --config bs-config.js",
+    "dev": "concurrently \"npm run nodemon\" \"npm run browser-sync\"",
+    "open": "php -S dev.practise-php.io:8080",
+    "sass": "sass assets/scss/main.scss  public/css/main.css",
+    "sass-dev": "sass -w assets/scss/main.scss  public/css/main.css",
+    "sass-build": "sass  --no-source-map  assets/scss/main.scss dist/css/main.css --style=compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

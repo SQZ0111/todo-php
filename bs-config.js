@@ -1,5 +1,3 @@
-const { notify } = require("browser-sync");
-
 module.exports = {
   ui: {
     port: 3001,
